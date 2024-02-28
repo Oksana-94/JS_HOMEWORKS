@@ -1,9 +1,9 @@
 'use strict';
 
 //Task 1
-let str1 = prompt();
-let str2 = prompt();
-let str3 = prompt();
+const str1 = prompt();
+const str2 = prompt();
+const str3 = prompt();
 
 console.log(str1 + ' ' + str2 + ' ' + str3);
 
