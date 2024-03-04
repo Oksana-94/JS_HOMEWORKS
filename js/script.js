@@ -11,3 +11,5 @@ const mult = num1 * num2;
 console.log('Результат: ' + num1 + ' * ' + num2 + ' = ' + mult);
 const divide = num1 / num2;
 console.log('Результат: ' + num1 + ' / ' + num2 + ' = ' + divide);
+
+
