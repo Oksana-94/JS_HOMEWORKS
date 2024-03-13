@@ -1,5 +1,6 @@
 'use strict';
 
+
 // 1
 let str = '';
 for(let i = 10; i <= 20; i++) {
@@ -103,19 +104,14 @@ console.log(sumOfEvenDivisors);
 
 // 12
 
-// for(let i = 1; i <= 10; i++) {
-//     let mult = 7;
-//     mult *= i;
-//     console.log(`${i} * 7 = ${mult}`);
-// }
+let table = 0;
 
-let table = 1;
 for (let i = 1; i <= 10; i++) {
 
 
     for(let j = 1; j <= 10; j++) {
         table = i * j;
-        console.log(table);
+        console.log(`${i} * ${j} = ${table}`);
     }
 
 
