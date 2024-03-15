@@ -1,3 +1,11 @@
-### Homework 1
-Створити шаблон ДЗ з уроку 1. 
-В репозиторії повинна бути гілка main або master з файловою структурою з уроку 1
+### ДЗ 27. Реалізуйте функцію generateKey
+
+
+Реалізуйте функцію generateKey(length, characters), яка повертає рядок випадкових символів із набору characters довжиною length. span>
+
+Наприклад:
+
+const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
+const key = generateKey(16, characters);
+console.log(key); // eg599gb60q926j8i
