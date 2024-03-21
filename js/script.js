@@ -1,23 +1,22 @@
 'use strict';
 
-const num = +prompt('Введіть число');
+const age = prompt('Введіть число');
 
 switch (true) {
-    case num === 0:
-        alert(`Вам ${num} років.`);
+    case age === null:
+        alert('Ви скасували запит');
+            break;
+    case +age[age.length - 1] === 1:
+        alert(`Вам ${age} рік.`);
         break;
-    case num === 1 || num === 21 || num === 31:
-        alert(`Вам ${num} рік.`);
+    case +age[age.length- 1] >= 2 && +age[age.length - 1] <= 4:
+        alert(`Вам ${age} роки.`);
         break;
-    case num >= 2 && num <= 4 || num >= 22 && num <= 24 || num >= 32 && num <= 34:
-        alert(`Вам ${num} роки.`);
+    case age % 2 === 1 || +age[age.length - 1] === 0 || age % 2 === 0:
+        alert(`Вам ${age} років.`);
         break;
-    case num >= 5 && num <=20 || num >= 25 && num <= 30 || num >= 35 && num <= 40:
-        alert(`Вам ${num} років`);
-        break;
-    case num >=41:
-        alert('Ви у зрілому віці');
-        break;
-    case isNaN(num):
+    case isNaN(+age):
         alert('Ви ввели некоректне число!');
 }
+
+console.log(+age[age.length - 1]);
