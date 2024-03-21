@@ -1,15 +1,15 @@
 'use strict';
 
 const str = 'Hello';
-const num = 6;
+const num = 5;
 const sym = '*';
 const boo = true;
 function padString(string, number, symbol, boolean) {
 
-    if(string === undefined) return 'Помилка! Ви не ввели перший аргумент';
-    if(number === undefined) return 'Помилка! Ви не ввели другий аргумент!';
-    if(symbol === undefined) return 'Помилка! Ви не ввели третій аргумет!';
-    if(boolean === undefined) return 'Помилка! Ви не ввели четвертий аргумент!';
+    if(typeof string !== 'string') return 'STR should be in string type';
+    if(typeof number !== 'number' || isNaN(number)) return 'number should be in number type';
+    if(typeof symbol !== 'string' || symbol.length !== 1) return 'wrong symbol value';
+    if(typeof boolean !== 'boolean') return 'boolean param should be in boolean type';
 
     while(string.length < number && boolean === true) {
         string += symbol;
