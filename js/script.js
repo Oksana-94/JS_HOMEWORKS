@@ -1,10 +1,10 @@
 'use strict';
 
 const str = 'Hello';
-const num = 5;
+const num = 6;
 const sym = '*';
 const boo = true;
-function padString(string, number, symbol, boolean) {
+const padString = function (string, number, symbol, boolean) {
 
     if(typeof string !== 'string') return 'STR should be in string type';
     if(typeof number !== 'number' || isNaN(number)) return 'number should be in number type';
