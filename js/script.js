@@ -18,5 +18,3 @@ switch (true) {
     case isNaN(+age):
         alert('Ви ввели некоректне число!');
 }
-
-console.log(+age[age.length - 1]);
