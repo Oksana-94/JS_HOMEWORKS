@@ -1,7 +1,7 @@
 {
   "name": "js_homeworks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Homework 52",
   "main": "index.js",
   "scripts": {
     "test": "test"
